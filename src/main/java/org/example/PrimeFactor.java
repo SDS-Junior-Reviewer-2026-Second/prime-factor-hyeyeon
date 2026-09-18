@@ -13,8 +13,14 @@ public class PrimeFactor {
                     number /= 2;
                 }
             } else if(number == 6) {
-                factors.add(2);
-                factors.add(3);
+                while(number % 2== 0){
+                    factors.add(2);
+                    number /= 2;
+                }
+                while(number % 3 == 0){
+                    factors.add(3);
+                    number /= 3;
+                }
             }
             else {
                 factors.add(number);
