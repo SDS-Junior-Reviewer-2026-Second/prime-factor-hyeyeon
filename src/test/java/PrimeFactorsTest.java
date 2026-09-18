@@ -45,4 +45,10 @@ public class PrimeFactorsTest {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(Arrays.asList(3,3), primeFactor.of(9));
     }
+
+    @Test
+    void testPrimefactorOf12() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(Arrays.asList(2,2,3), primeFactor.of(12));
+    }
 }
