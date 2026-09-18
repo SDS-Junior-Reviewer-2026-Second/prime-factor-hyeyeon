@@ -8,12 +8,7 @@ public class PrimeFactor {
         List<Integer> factors = new ArrayList<>();
         if(number > 1){
             int divisor = 2;
-            if(number == 4) {
-                while(number % divisor == 0) {
-                    factors.add(divisor);
-                    number /= divisor;
-                }
-            } else if(number == 6 || number == 9) {
+            if(number == 4 || number == 6 || number == 9) {
                 for(divisor = 2; number > 1; divisor++){
                     while(number % divisor == 0){
                         factors.add(divisor);
