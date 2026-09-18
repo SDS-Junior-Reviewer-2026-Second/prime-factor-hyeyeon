@@ -8,8 +8,14 @@ public class PrimeFactor {
         List<Integer> factors = new ArrayList<>();
         if(number > 1){
             if(number == 4) {
-                factors.add(2);
-                factors.add(2);
+                if(number % 2 == 0) {
+                    factors.add(2);
+                    number /= 2;
+                }
+                if(number % 2 == 0) {
+                    factors.add(2);
+                    number /= 2;
+                }
             } else {
                 factors.add(number);
             }
