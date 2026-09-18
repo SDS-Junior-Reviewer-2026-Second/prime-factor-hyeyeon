@@ -33,4 +33,10 @@ public class PrimeFactorsTest {
         PrimeFactor primeFactor = new PrimeFactor();
         assertEquals(Arrays.asList(3), primeFactor.of(3));
     }
+
+    @Test
+    void testPrimefactorOf4() {
+        PrimeFactor primeFactor = new PrimeFactor();
+        assertEquals(Arrays.asList(2,3), primeFactor.of(6));
+    }
 }
