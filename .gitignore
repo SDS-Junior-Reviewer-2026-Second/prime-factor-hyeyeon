@@ -1,3 +1,4 @@
+/build/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -17,6 +18,8 @@ target/
 .classpath
 .factorypath
 .project
+.classpath
+/.settings/
 .settings
 .springBeans
 .sts4-cache
